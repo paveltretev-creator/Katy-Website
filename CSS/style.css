@@ -7,7 +7,7 @@
 
 /* Стили для всего тела сайта - ТОЛЬКО ОДИН ШРИФТ */
 body {
-    font-family: 'Segoe UI';поле
+    font-family: 'Segoe UI';
     background-color: #f5f7fa;
     min-height: 100vh;
 }
