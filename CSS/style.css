@@ -5,9 +5,9 @@
     box-sizing: border-box;
 }
 
-/* Стили для всего тела сайта */
+/* Стили для всего тела сайта - ТОЛЬКО ОДИН ШРИФТ */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';поле
     background-color: #f5f7fa;
     min-height: 100vh;
 }
@@ -143,7 +143,7 @@ body {
 /* Основное содержимое страницы */
 .main-content {
     padding: 40px 0;
-    min-height: calc(100vh - 156px); /* Высота минус высота шапки */
+    min-height: calc(100vh - 156px);
 }
 
 .main-content .container {
@@ -224,5 +224,52 @@ body {
 /* Корректировка высоты основного контента */
 .main-content {
     padding: 40px 0;
-    min-height: calc(100vh - 300px); /* Уменьшили высоту из-за добавления footer */
+    min-height: calc(100vh - 300px);
+}
+
+/* Стили для расписания на неделю */
+.week-schedule {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: nowrap;
+}
+
+.day-card {
+    flex: 1;
+    min-width: 180px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.day-header {
+    background-color: #1a2a6c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Специальный стиль для субботы */
+.day-header.saturday {
+    background-color: #4a90e2; /* Другой синий цвет */
+}
+
+.day-content {
+    padding: 15px;
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.day-content p {
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    margin: 0;
+    font-size: 14px;
 }
